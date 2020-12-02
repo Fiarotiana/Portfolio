@@ -1,8 +1,9 @@
 @font-face {
   font-family: 'Helvetica';
-  src:url('font/HelveticaRoundedLTStd-Black.otf'),
-      url('font/helvetica.woff'),
-      url('font/Helvetica.ttf'); 
+  src:url('font/HelveticaRounded-BoldObl.woff'),
+      url('font/HelveticaRounded-BoldObl.ttf'),
+      url('font/HelveticaRoundedLTStd-Black.otf'),
+      url('font/HelveticaRoundedLTStd-Bd.otf'); 
   font-weight: normal;
   font-style: normal;
 }

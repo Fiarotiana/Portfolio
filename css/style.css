@@ -172,7 +172,7 @@ header .align-items-center .container .row .content {
   transition: all linear .5s;
 }
 
-header .align-items-center .container .row .content .text{
+header .align-items-center .container .row .content .header-text{
   border-left: solid 9px;
   padding-left: 30px;
 }
@@ -248,12 +248,22 @@ main .main-content .section1 .about .about-content p{
   margin-bottom: 3rem;
 }
 
-main .main-content .section1 .about .about-content .download-resume a{
+main .main-content .section1 .about .about-content .resume{
   color: #299cd3 !important;
+  cursor: pointer;
 }
 
-main .main-content .section1 .about .about-content .download-resume img.resume{
+main .main-content .section1 .about .about-content .resume img.resume{
   width:20px;
+}
+
+main .main-content .section1 .about .about-content .download-resume{
+  margin-top: 3%;
+  font-family: Arial, 'Helvetica', sans-serif;
+}
+
+main .main-content .section1 .about .about-content .download-resume a{
+  font-weight: bold;
 }
 
 main .main-content .section1 .about .about-content .reseaux-sociaux .logo .logo-icon{
@@ -381,10 +391,19 @@ main .main-content .section3 .portfolio .portfolio-content .work .work-content{
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
+  visibility: visible;
+  height: auto;
+  transition: opacity .5s;
+  opacity: 1;
 }
 
 main .main-content .section3 .portfolio .portfolio-content .work .work-content.hide-work{
-  display: none;
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  position: absolute;
 }
 
 main .main-content .section3 .portfolio .portfolio-content .work .work-content .content{
@@ -394,6 +413,8 @@ main .main-content .section3 .portfolio .portfolio-content .work .work-content .
   border-radius: 5px;
   background-size: cover;
   background-position: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main .main-content .section3 .portfolio .portfolio-content .work .work-content .content .overlay{

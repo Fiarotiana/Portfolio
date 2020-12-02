@@ -8,14 +8,15 @@
     <!-- icon -->
     <link rel="icon" href="images/icon.png" type="image/x-icon">
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="mdb/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fiche_style.css">
 
 
 </head>
 <body>
-
+    
     <div class="page-wrapper">
         <header>    
 
@@ -107,7 +108,7 @@
                             </div>
 
                             <div class="col-md-6 content">
-                                <div class="text">
+                                <div class="header-text">
                                     <span class="hi">Hi</span>, 
                                     <p></p>
                                     I’m <span class="david">David</span> ,
@@ -131,6 +132,7 @@
 
         <main>
             
+
             <div class="background">
                 <div class="main-content col-md-8">
                     <div class="section1" id="section1">
@@ -143,10 +145,17 @@
                                 elit. Illo quos quod adipisci similique obcaecati a 
                                 facere quia ut cumque veniam, nihil.
                                 <p></p>
-                                <div class="download-resume">
-                                    <a href="piece-jointe/Curriculum_Vitae.pdf" target="_blank">
+                                
+                                <div class="resume" data-toggle="modal" data-target="#cvModal">
+                                    <div class="content">
                                         <img src="images/DoubleDown_48px.png" class="resume" alt="" srcset="">
                                         Checkout my Resume here
+                                    </div>
+                                </div>
+
+                                <div class="download-resume">
+                                    <a href="piece-jointe/Curriculum_Vitae.pdf" class="btn btn-primary" target="_blank">
+                                        Download my Resume
                                     </a>
                                 </div>
 
@@ -169,6 +178,324 @@
 
                         </div>
                         
+                    </div>
+
+                    <!-- CV Modal -->
+
+                    <div class="modal fade cvModal" id="cvModal" tabindex="-1" role="dialog" aria-labelledby="cvModal"
+                    aria-hidden="true">
+
+                        <div class="modal-dialog modal-fullscreen" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" data-dismiss="modal">Curiculum Vitae</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-dismiss="modal" aria-label="Close">
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="overlay">
+                                        <!-- Mask & flexbox options-->
+                                        <div class="align-items-center">
+                                            <!-- Content -->
+                                            <div class="container">
+
+                                                
+                                                <!--Grid row-->
+                                                <div class="row">
+                                                    <div class="col-md-6 image">
+                                                        <img class="card-image img-fluid" src="images/Tool.png" alt="" srcset="">
+                                                    </div>
+
+                                                    <div class="col-md-6 content">
+                                                        <div class="text container">
+                                                            <div class="menu">
+                                                                <ul class="tabs">
+                                                                    <div class="row">
+                                                                        <li class="icon about col-sm active">
+                                                                            <a href="#about">
+                                                                                <img class="img-fluid" src="images/Person Male_96px_1.png" alt="" srcset="">
+                                                                            </a> 
+                                                                        </li>
+                                                                        <li class="icon col-sm">
+                                                                            <a href="#graduation">
+                                                                                <img class="img-fluid" src="images/Graduation Cap_104px_1.png" alt="" srcset="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="icon col-sm">
+                                                                            <a href="#experience">
+                                                                                <img class="img-fluid" src="images/Administrative Tools_96px_1.png" alt="" srcset="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="icon col-sm">
+                                                                            <a href="#skill">
+                                                                                <img class="img-fluid" src="images/Crown_96px_1.png" alt="" srcset="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="icon col-sm">
+                                                                            <a href="#language">
+                                                                                <img class="img-fluid" src="images/Language_96px_1.png" alt="" srcset="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="icon col-sm">
+                                                                            <a href="#hobbies">
+                                                                                <img class="img-fluid" src="images/Star_100px.png" alt="" srcset="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="icon col-sm">
+                                                                            <a href="#contact">
+                                                                                <img class="img-fluid" src="images/Phone_104px_1.png" alt="" srcset="">
+                                                                            </a>
+                                                                        </li>
+                                                                    </div>
+                                                                </ul>
+                                                                <div class="tabs-content">
+                                                                    <div id="about" class="tab-content active about">
+                                                                        <div class="title">
+                                                                            <span class="name">
+                                                                                ZAKARIVONY LALASON
+                                                                            </span>
+                                                                            <span class="firstname">
+                                                                                Fiarotiana Anjarasoa David
+                                                                            </span>
+                                                                        </div>
+                                                                        
+                                                                        <div class="text-about">
+                                                                            Single <br>
+                                                                            ESIIA 5 <br>
+                                                                            N°9 <br>
+                                                                            Tel: +261342714493 <br>
+                                                                            Adresse: Lot AZ 95T Anosizato Ouest <br>
+                                                                            Email: <a href="mailto:fiarotiana357@gmail.com">Fiarotiana357@gmail.com</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div id="graduation" class="tab-content graduation">
+                                                                        
+                                                                        <div class="curse">
+                                                                            <div class="date">
+                                                                                2020 :
+                                                                            </div>
+                                                                            <div class="info">
+                                                                                <div class="diplome">
+                                                                                    <strong>Licence</strong> <br>
+                                                                                    en Informatique et Telecommunications
+                                                                                </div>
+                                                                                <div class="place">
+                                                                                    Institut Superieur Polytechnique de Madagascar
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="curse">
+                                                                            <div class="date">
+                                                                                2015 :
+                                                                            </div>
+                                                                            <div class="info">
+                                                                                <div class="diplome">
+                                                                                    <strong>Baccalaureat</strong> <br>
+                                                                                    Serie C
+                                                                                </div>
+                                                                                <div class="place">
+                                                                                    Lycée RAZAFINDRABE Victorien Moramanga
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="curse">
+                                                                            <div class="date">
+                                                                                2010 :
+                                                                            </div>
+                                                                            <div class="info">
+                                                                                <div class="diplome">
+                                                                                    <strong>Delf A2</strong>
+                                                                                </div>
+                                                                                <div class="place">
+                                                                                    Alliance Française Moramanga
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div id="experience" class="tab-content experience">
+                                                                        
+                                                                        <div class="curse">
+                                                                            <div class="date">
+                                                                                Juillet 2020 :
+                                                                            </div>
+                                                                            <div class="info">
+                                                                                <div class="title">
+                                                                                    Projet Personnel | Design
+                                                                                </div>
+                                                                                <div class="place">
+                                                                                </div>
+                                                                                <div class="exptext">
+                                                                                    <p>Création Design de Portfolio, Curiculum Vitae (CV)</p>
+                                                                                    
+                                                                                    <p>Création et illustration d'un personnage d'anime nommée "Dark Magician Girl" avec Photoshop</p>
+                                                                                    
+                                                                                    <p>Intégration de certaines pages web de MKSarchitecture</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="curse">
+                                                                            <div class="date">
+                                                                                Mai 2020 :
+                                                                            </div>
+                                                                            <div class="info">
+                                                                                <div class="title">
+                                                                                    Projet Personnel | Gestion de Stock
+                                                                                </div>
+                                                                                <div class="place">
+                                                                                </div>
+                                                                                <div class="exptext">
+                                                                                    <p>Site de Gestion de stock réalisé avec Symfony 4.4, ORM Doctrine et MariaDB</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="curse">
+                                                                            <div class="date">
+                                                                                Janvier 2020 :
+                                                                            </div>
+                                                                            <div class="info">
+                                                                                <div class="title">
+                                                                                    Stage | Gestion de Données
+                                                                                </div>
+                                                                                <div class="place">
+                                                                                    Gasi'pro
+                                                                                </div>
+                                                                                <div class="exptext">
+                                                                                    <p>Conception, Réalisation et Déployement d'un application web de gestion de données réalisé avec MariaDB, Bootstrap4, JQuery, JEE/J2EE puis en PHP</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="curse">
+                                                                            <div class="date">
+                                                                                Novembre 2018 - Janvier 2019 :
+                                                                            </div>
+                                                                            <div class="info">
+                                                                                <div class="title">
+                                                                                    Stage | Refonte Site Web
+                                                                                </div>
+                                                                                <div class="place">
+                                                                                    Madagascar National Parks
+                                                                                </div>
+                                                                                <div class="exptext">
+                                                                                    <p>Création d'un nouveau site web pour Madagascar National Parks en reprenant les points positifs de l'ancien site. Un site web conforme à la charte graphique de MNP et conforme aux nouvelles normes des sites web comme la flexibilité, légèreté, attractivité et l'adaptation à tous supports des appareils utilisés (responsive design) en vue de l'obtention du diplôme de Licence</p>
+                                                                                </div>
+                                                                                <div class="link">
+                                                                                    Lien: <a href="http://www.parcs-madagascar.com" target="_blank">parcs-madagascar.com</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div id="skill" class="tab-content skill">
+                                                                        <div class="skill-category">
+                                                                            <div class="title">
+                                                                                Développement Logiciel :
+                                                                            </div>
+                                                                            <div class="skilltext">
+                                                                                <p><img src="images/icons8-logo-java-coffee-cup-96.png" alt="" srcset="">Java</p>
+                                                                                <p><img src="images/icons8-c-sharp-logo-96.png" alt="" srcset="">C#</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="skill-category">
+                                                                            <div class="title">
+                                                                                Développement Web :
+                                                                            </div>
+                                                                            <div class="skilltext">
+                                                                                <p><img src="images/icons8-html-5-96.png" alt="" srcset="">Html5</p>
+                                                                                <p><img src="images/icons8-css3-96.png" alt="" srcset="">CSS</p>
+                                                                                <p><img src="images/icons8-javascript-96.png" alt="" srcset="">Javascript</p>
+                                                                                <p><img src="images/icons8-css3-96.png" alt="" srcset="">Wordpress</p>
+                                                                                <p><img src="images/icons8-bootstrap-96.png" alt="" srcset="">Bootstrap 4 / 5</p>
+                                                                                <p><img src="images/icons8-logo-java-coffee-cup-96.png" alt="" srcset="">JEE / J2EE</p>
+                                                                                <p><img src="images/icons8-logo-php-80.png" alt="" srcset="">PHP 5 / 7</p>
+                                                                                <p><img src="images/icons8-symfony-96.png" alt="" srcset="">Symfony 4</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="skill-category">
+                                                                            <div class="title">
+                                                                                Base de données :
+                                                                            </div>
+                                                                            <div class="skilltext">
+                                                                                <p><img src="images/1200px-MySQL.svg.png" alt="" srcset="">MySql</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="skill-category">
+                                                                            <div class="title">
+                                                                                Graphisme :
+                                                                            </div>
+                                                                            <div class="skilltext">
+                                                                                <p><img src="images/Adobe Photoshop_96px_1.png" alt="" srcset="">Photoshop</p>
+                                                                                <p><img src="images/Adobe Illustrator_96px.png" alt="" srcset="">Illustrator</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div id="language" class="tab-content language">
+                                                                        <div class="french">
+                                                                            <h6>French</h6>
+                                                                            <div class="progress">
+                                                                                <div class="progress-bar fr">
+                                                                                    <span>85%</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="english">
+                                                                            <h6>English</h6>
+                                                                            <div class="progress">
+                                                                                <div class="progress-bar en">
+                                                                                    <span>65%</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div id="hobbies" class="tab-content hobbies">
+                                                                        <div class="hobbietext">
+                                                                            <p><img src="images/Knight_80px.png" alt="" srcset="">Chess</p>
+                                                                            <p><img src="images/Controller_96px.png" alt="" srcset="">Jeu Video</p>
+                                                                            <p><img src="images/Anime_100px.png" alt="" srcset="">Anime</p>
+                                                                            <p><img src="images/Hand With Pen_96px.png" alt="" srcset="">Dessin</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div id="contact" class="tab-content contact">
+                                                                        <div>
+                                                                            <img src="images/Gmail_96px.png" alt="" srcset=""> <a href="mailto:fiarotiana357@gmail.com">Fiarotiana357@gmail.com</a>
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="images/Shake Phone_96px.png" alt="" srcset=""> +261342714493
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="images/Facebook_96px.png" alt="" srcset=""> <a href="https://www.facebook.com/fiarokwelylemanifique.zakarivony" target="_blank">Fiarotiana Anjarasoa</a>
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="images/Marker_100px.png" alt="" srcset="">Lot AZ 95T Anosizato Ouest
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <!--Grid row-->
+                                            </div>
+                                            <!-- Content -->
+                                        </div>
+                                    </div>
+                                    <!-- Mask & flexbox options-->
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="section2" id="section2">
@@ -286,33 +613,33 @@
                                 </div>
 
                                 <div class="work">
-                                    <div class="row">
-                                        <div class="work-content web" data-toggle="modal" data-target="#oneModal">
+                                    <div class="row row-cols-auto">
+                                        <div class="work-content web col-sm" data-toggle="modal" data-target="#oneModal">
                                             <div class="content one web">
                                                 <div class="overlay"></div>
                                             </div>
                                         </div>
-                                        <div class="work-content web" data-toggle="modal" data-target="#twoModal">
+                                        <div class="work-content web col-sm" data-toggle="modal" data-target="#twoModal">
                                             <div class="content two web">
                                                 <div class="overlay"></div>
                                             </div>
                                         </div>
-                                        <div class="work-content logo" data-toggle="modal" data-target="#fiveModal">
+                                        <div class="work-content logo col-sm" data-toggle="modal" data-target="#fiveModal">
                                             <div class="content five logo">
                                                 <div class="overlay"></div>
                                             </div>
                                         </div>
-                                        <div class="work-content logo" data-toggle="modal" data-target="#sixModal">
+                                        <div class="work-content logo col-sm" data-toggle="modal" data-target="#sixModal">
                                             <div class="content six logo">
                                                 <div class="overlay"></div>
                                             </div>
                                         </div>
-                                        <div class="work-content web" data-toggle="modal" data-target="#threeModal">
+                                        <div class="work-content web col-sm" data-toggle="modal" data-target="#threeModal">
                                             <div class="content three web">
                                                 <div class="overlay"></div>
                                             </div>
                                         </div>
-                                        <div class="work-content web" data-toggle="modal" data-target="#fourModal">
+                                        <div class="work-content web col-sm" data-toggle="modal" data-target="#fourModal">
                                             <div class="content four web">
                                                 <div class="overlay"></div>
                                             </div>
@@ -333,8 +660,7 @@
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
+                                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
                                     </button>
                                 </div>
                                 <div class="modal-body">
@@ -360,8 +686,7 @@
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
+                                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
                                     </button>
                                 </div>
                                 <div class="modal-body">
@@ -387,8 +712,7 @@
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
+                                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
                                     </button>
                                 </div>
                                 <div class="modal-body">
@@ -414,8 +738,7 @@
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
+                                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
                                     </button>
                                 </div>
                                 <div class="modal-body">
@@ -441,8 +764,7 @@
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
+                                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
                                     </button>
                                 </div>
                                 <div class="modal-body">
@@ -468,8 +790,7 @@
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
+                                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
                                     </button>
                                 </div>
                                 <div class="modal-body">
@@ -530,12 +851,12 @@
     </div>
 
 
-    <!-- jQuery -->
-    <script type="text/javascript" src="mdb/js/jquery.min.js"></script>
+    
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="mdb/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 
     <script src="js/script.js"></script>
+    <script src="js/fiche_script.js"></script>
 
 </body>
 </html>

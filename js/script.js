@@ -14,35 +14,31 @@
     }
 })()
 
-document.getElementById('web').addEventListener('click',function(e){
+let show_work = function(){
     let show = document.querySelectorAll('.work-content')
     for (let i = 0 ; i< show.length; i++){
         show[i].classList.remove('hide-work')
     }
+}
 
-    let hide_logo = document.querySelectorAll('.work-content.logo')
-    for (let i = 0 ; i< hide_logo.length; i++){
-        hide_logo[i].classList.add('hide-work')
+let hide_work = function(a){
+    let hide = document.querySelectorAll(a)
+    for (let i = 0 ; i< hide.length; i++){
+        hide[i].classList.add('hide-work')
     }
-    
+}
+
+document.getElementById('web').addEventListener('click',function(e){
+    show_work()
+    hide_work('.work-content.logo')
 })
 
 document.getElementById('logo').addEventListener('click',function(e){
-    let show = document.querySelectorAll('.work-content')
-    for (let i = 0 ; i< show.length; i++){
-        show[i].classList.remove("hide-work")
-    }
-
-    let hide_web = document.querySelectorAll('.work-content.web')
-    for (let i = 0 ; i< hide_web.length; i++){
-        hide_web[i].classList.add("hide-work")
-    }
+    show_work()
+    hide_work('.work-content.web')
     
 })
 
 document.getElementById('all').addEventListener('click',function(e){
-    let show = document.querySelectorAll('.work-content')
-    for (let i = 0 ; i< show.length; i++){
-        show[i].classList.remove("hide-work")
-    }
+    show_work()
 })

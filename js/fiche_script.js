@@ -29,10 +29,4 @@
             show(this)
         })
     }
-
-    let hash = window.location.hash
-    let a = document.querySelector('a[href="'+hash+'"]')
-    if (a!==null && !a.classList.contains('active')){
-        show(a)
-    }
 })()

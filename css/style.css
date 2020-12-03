@@ -500,6 +500,15 @@ main .main-content .section3 .portfolio .portfolio-content .work .content.six {
   color: #747373d9 !important;
 }
 
+.modal .modal-content .modal-body .text .content a{
+  color: #578bc3 !important;
+  text-decoration: none;
+}
+
+.btn-close{
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
 
 /*************** Fin Contenu Main ***************/
 
